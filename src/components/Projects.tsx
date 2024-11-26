@@ -1,27 +1,29 @@
 import { motion } from 'framer-motion';
 import { Rocket, Github, ExternalLink } from 'lucide-react';
-
+import img1 from './a1.png'
+import img2 from './a2.png'
+import img3 from './a3.png'
 const projects = [
   {
     title: "EasyCompile",
     description: "Full-stack collaborative web development platform with real-time code editing and saving",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&auto=format",
+    image: img1,
     github: "https://github.com/yousufali3/easycompile",
-    demo: "#",
+    demo: "https://easycompile-1.onrender.com",
     tags: ["React.js", "Node.js", "MongoDB", "JWT", "Tailwind CSS"]
   },
   {
     title: "TypeMaster",
     description: "Clean, ad-free typing test platform with 30-second challenges and conditional rendering",
-    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&h=400&fit=crop&auto=format",
+    image: img2,
     github: "https://github.com/yousufali3/typemaster",
-    demo: "#",
+    demo: "https://type-master-three.vercel.app/",
     tags: ["React.js", "JavaScript", "Tailwind CSS", "Vite"]
   },
   {
     title: "TubeSync",
     description: "Real-time YouTube video synchronization platform with room creation and chat features",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop&auto=format",
+    image: img3,
     github: "https://github.com/yousufali3/tubesync",
     demo: "#",
     tags: ["Next.js", "TypeScript", "Socket.IO", "Tailwind CSS"]
