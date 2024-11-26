@@ -63,7 +63,7 @@ function App() {
             <div className="flex flex-wrap items-center gap-4 mb-12">
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                href="./Yousuf_Ali_Resume.pdf"
+                href="/src/Yousuf_Ali_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-full hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 shadow-lg shadow-purple-500/25"
               >
