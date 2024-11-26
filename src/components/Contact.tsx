@@ -5,6 +5,9 @@ import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
 export default function Contact() {
+
+  // const emailService = process.env.EMAIL_SERVICE;
+
   const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -15,10 +18,10 @@ export default function Contact() {
     try {
       setIsLoading(true);
       await emailjs.sendForm(
-        "service_w4shzcx",
-        "template_aoauovs",
+        import.meta.env.VITE_EMAIL_SERVICE,
+       import.meta.env.VITE_EMAIL_TEMPLATE,
         formRef.current,
-        "fT0rUsbV3QVsF5mtP"
+      import.meta.env.VITE_EMAIL_PUBLIC
       );
       toast.success('Message sent successfully!');
       formRef.current.reset();
